@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <div class="flex flex-col md:flex-row h-screen">
+        <div class="w-full md:w-1/2 md:relative">
+            <div class="flex flex-column h-full items-center justify-center align-middle w-full md:w-3/4 md:absolute right-0">
+                <div class="p-10 shadow-2xl">
+                    <h1 class="text-center font-bold text-3xl">Login Page</h1>
+                    <p class="text-center mt-5">
+                        Hi! Welcome to FlixClips! Sign in to explore movies, TV shows, and more. New here? Create your account now!.
+                    </p>
+                    <form action="">
+                        <div class="my-5">
+                            <label for="email" class="font-bold">E-mail</label>
+                            <input type="email" 
+                             name="email" id="email" 
+                             placeholder="youremail@example.com" 
+                             class="w-full border border-gray-300 p-2">
+                        </div>
+                        <div class="my-5">
+                            <label for="email" class="font-bold">Password</label>
+                            <input type="password"
+                             name="password" 
+                             id="password" 
+                             placeholder="Your Password" 
+                             class="w-full border border-gray-300 p-2">
+                        </div>
+                        <button type="submit" 
+                         class="bg-red-900 border text-white w-full py-3 mb-4 hover:bg-black cursor-pointer hover:text-white transition">Sign In</button>
+                    </form>
+                    <button type="submit" 
+                     class="w-full py-3 border text-center cursor-pointer block hover:bg-red-900 hover:text-white transition">Sign Up</button>
+                    <div class="w-full text-center mt-5">
+                            <a href="" class="text-center text-blue-500 w-full block">Lupa Password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 bg-[url('assets/film.png')] bg-cover bg-no-repeat bg-center h-full md:h-full">
+            <div class="w-full h-full backdrop-brightness-30 flex flex-col justify-center align-middle items-center text-center text-white">
+                <div class="lg:w-9/12 w-11/12">
+                    <h1 class="text-5xl font-bold">About FlixClips</h1>
+                <p class="mt-10 text-lg">
+                    FlixClips was born from a love for storytelling.
+Since our launch in 2020, we've aimed to bring the world's best movies, series, and original content to your screen — anytime, anywhere. Whether you're into thrillers, rom-coms, or documentaries, there's always something waiting for you here. Get 3 months of unlimited access to movies and TV shows for only IDR89.900.
+                    <a href="#" class="inline-block underline">Sign up now and start streaming instantly!</a>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
